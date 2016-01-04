@@ -1,10 +1,12 @@
-# RUN THE PROGRAM
+# --- A PYTHON 3 PROGRAM ---
+
+# Run the Program
 running = True
-# WELCOME MESSAGE
+# Welcome Message
 print("Welcome to Jon's Area Calculator: Featuring Circles and Rectangles!")
 print("-------------------------------------------------------------------")
 print
-# PRINT THE OPTION SELECT
+# Print the Option Select
 while(running):
     print(
 
@@ -15,7 +17,7 @@ while(running):
     print("1: Rectangle")
     print("2: Circle")
     print
-# GET USER INPUT AND SOLVE
+# Get the user's input and solve
     shape = int(input("> "))
     print
 
@@ -36,13 +38,13 @@ while(running):
             print("The area is", area, "units squared.")
             valid_num = False
             running = False
-# IF AN INVALID CHARACTER IS INPUTTED, LOOP BACK
+# If an invalid character is inputted, loop back
     else:
         invalid_num = True
         while(invalid_num):
             print("Please enter a valid number to continue! (1 or 2)")
             invalid_num = False
-# CONTINUE?
+# Continue?
     cont = True
     while(cont):
         if running == False:
@@ -65,5 +67,5 @@ while(running):
                     print("Please enter a valid answer.")
                     invalid_ans = False
                     cont = True
-# QUIT THE PROGRAM
+# Quit the Program
 quit()
