@@ -1,0 +1,69 @@
+# RUN THE PROGRAM
+running = True
+# WELCOME MESSAGE
+print("Welcome to Jon's Area Calculator: Featuring Circles and Rectangles!")
+print("-------------------------------------------------------------------")
+print
+# PRINT THE OPTION SELECT
+while(running):
+    print(
+
+
+        )
+
+    print("Please select a shape:")
+    print("1: Rectangle")
+    print("2: Circle")
+    print
+# GET USER INPUT AND SOLVE
+    shape = int(input("> "))
+    print
+
+    if shape == 1:
+        valid_num = True
+        while(valid_num):
+            height = float(input("Please enter the height: "))
+            width = float(input("Please enter the width: "))
+            area = height*width
+            print("The area is", area, "units squared.")
+            valid_num = False
+            running = False
+    elif shape == 2:
+        valid_num = True
+        while(valid_num):
+            radius = float(input("Please enter the radius: "))
+            area = 3.14*(radius**2)
+            print("The area is", area, "units squared.")
+            valid_num = False
+            running = False
+# IF AN INVALID CHARACTER IS INPUTTED, LOOP BACK
+    else:
+        invalid_num = True
+        while(invalid_num):
+            print("Please enter a valid number to continue! (1 or 2)")
+            invalid_num = False
+# CONTINUE?
+    cont = True
+    while(cont):
+        if running == False:
+            answer = input("Continue with another problem? <y/n> :  ")
+            if answer == "y":
+                valid_ans = True
+                while(valid_ans):
+                    valid_ans = False
+                    cont = False
+                    running = True
+            elif answer == "n":
+                valid_ans = True
+                while(valid_ans):
+                    valid_ans = False
+                    cont = False
+                    running = False
+            else:
+                invalid_ans = True
+                while(invalid_ans):
+                    print("Please enter a valid answer.")
+                    invalid_ans = False
+                    cont = True
+# QUIT THE PROGRAM
+quit()
