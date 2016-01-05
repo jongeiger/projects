@@ -24,9 +24,9 @@ while(program):
         shape = input("> ")
     
         if shape == "1":
-            height = float(input("Please enter the height: "))
+            length = float(input("Please enter the length: "))
             width = float(input("Please enter the width: "))
-            area = height * width
+            area = length * width
             print("The area of this rectangle is", area, "units squared.")
             running = False
             
