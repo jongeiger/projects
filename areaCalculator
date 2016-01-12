@@ -16,8 +16,8 @@ while(program):
             )
         print("1: Rectangle")
         print("2: Circle")
-        print("3: Triangle")
-        print("4: Parallelogram")
+#        print("3: Triangle")
+#        print("4: Parallelogram")
     
         shape = input("> ")
     
@@ -62,6 +62,6 @@ while(program):
             contin = False
             program = False
         else:
-            print("Please select a valid answer(y/n)")
+            print("Please select a valid answer (y/n). ")
 time.sleep(0.5)
 quit()
