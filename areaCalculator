@@ -16,10 +16,10 @@ while(program):
             )
         print("1: Rectangle")
         print("2: Circle")
-#        print("3: Triangle")
-#        print("4: Parallelogram")
+        print("3: Triangle")
+        print("4: Parallelogram")
     
-        shape = input("> ")
+        shape = input("Choice: >> ")
     
         if shape == "1":
             length = float(input("Please enter the length: "))
@@ -34,18 +34,19 @@ while(program):
             print("The area of this circle is", area, "units squared.")
             running = False
             
-#        elif shape == "3":
-#            base = float(input("Please enter the base length: "))
-#            height = float(input("Please enter the height"))
-#            area = (1/2)*base*height
-#            print("The area of this triangle is", area, "units squared."
-#            running = False
+        elif shape == "3":
+            base = float(input("Please enter the base length: "))
+            height = float(input("Please enter the height: "))
+            area = (1/2)*base*height
+            print("The area of this triangle is", area, "units squared.")
+            running = False
         
-#        elif shape == "4"
-#            length = float(input("Please enter the base length"))
-#            height = float(input("Please enter the height"))
-#            area = length * height
-#            print("The area of this parallelogram is", area, "units squared.")
+        elif shape == "4":
+            length = float(input("Please enter the base length: "))
+            height = float(input("Please enter the height: "))
+            area = length * height
+            print("The area of this parallelogram is", area, "units squared.")
+            running = False
         
         else:
             print("Please enter a valid number (1 or 2).")
